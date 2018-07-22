@@ -1,0 +1,34 @@
+<html>
+<body>
+
+<p>Guess which is my Favourite Hobby: cooking, gardening, gaming, reading or sports?</p>
+
+<input id="myInput" type="text">
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="ola"></p>
+
+<script>
+function myFunction() {
+    var letter = document.getElementById("myInput").value;
+    var text;
+
+   
+    if (letter === "gaming") {
+        text = "Spotted! Good job!";
+        
+    
+    } else if (letter === "gardening" || letter === "gardening") {
+        text = "Close, but not close enough.";
+        
+   
+    } else {
+        text = "Waaay off..Try again!";
+    }
+    document.getElementById("ola").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

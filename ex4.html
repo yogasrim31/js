@@ -1,0 +1,22 @@
+<html>
+<body>
+
+<p>Type your quiz mark and click the button</p>
+
+<input id="marks" >
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="stu"></p>
+
+<script>
+function myFunction() {
+    var marks, score;
+    marks = document.getElementById("marks").value;
+    score = (marks< 75) ? " Sorry, You are not  Eligible":"Eligible";
+    document.getElementById("stu").innerHTML = score + " to participate.";
+}
+</script>
+
+</body>
+</html>
