@@ -1,0 +1,32 @@
+<html>
+<body>
+
+<h2>JavaScript Input Validation</h2>
+
+<p> enter a number between 1 and 10:</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Check Field</button>
+
+<p id="non"></p>
+
+<script>
+function myFunction() {
+    var x, text;
+
+   
+    x = document.getElementById("numb").value;
+
+   
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Invalid Input";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("non").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
